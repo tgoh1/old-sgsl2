@@ -1,0 +1,23 @@
+
+<ion-navbar *navbar>
+  <ion-title>Twinkle, Twinkle, Little Star</ion-title>
+</ion-navbar>
+<video hidden twinkle-vid="ctrl.videoCtrl" src="http://npat.club/videos/npat%20cover2.mp4"></video>
+
+<ion-content padding class="twinkle">
+  <h2>{{title}}</h2>
+  <ul class="lines">
+      <li *ngFor="let line of lines"
+      [class.selected]="line === selectedLine"
+      (click)="onSelect(line)"
+      >
+        <span> {{line.sentence}}</span>
+    </li>
+  </ul>
+  <div *ngIf="selectedLine">
+    <p>
+      {{selectedLine.no}}
+    </p>
+  </div>
+
+</ion-content>
