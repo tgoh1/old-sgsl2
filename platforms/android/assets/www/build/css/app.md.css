@@ -9508,6 +9508,40 @@ body {
   .pushpage .setcolor {
     background: #f7f7f7; }
 
+.video {
+  background-color: rgba(0, 0, 0, 0.4); }
+  .video .vid-container {
+    margin-left: auto;
+    margin-right: auto;
+    display: block; }
+  .video iframe {
+    max-width: 100%;
+    max-height: 100%;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+    overflow: none;
+    position: fixed;
+    right: 0;
+    top: 0; }
+
+.video {
+  background-color: rgba(0, 0, 0, 0.4); }
+  .video .vid-container {
+    margin-left: auto;
+    margin-right: auto;
+    display: block; }
+  .video iframe {
+    max-width: 100%;
+    max-height: 100%;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+    overflow: none;
+    position: fixed;
+    right: 0;
+    top: 0; }
+
 .toolbar-background {
   background-color: #4364dd; }
 
@@ -9528,3 +9562,6 @@ body {
 .tab-button[aria-selected="true"] {
   color: white !important;
   background: #4364dd; }
+
+body {
+  margin: 0; }

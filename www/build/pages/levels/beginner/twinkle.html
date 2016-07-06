@@ -2,9 +2,24 @@
 <ion-navbar *navbar>
   <ion-title>Twinkle, Twinkle, Little Star</ion-title>
 </ion-navbar>
-<video hidden twinkle-vid="ctrl.videoCtrl" src="http://npat.club/videos/npat%20cover2.mp4"></video>
+
+      <!-- <video
+      controls="controls"
+      preload="metadata"
+      autoplay="autoplay"
+      webkit-playsinline="webkit-playsinline"
+      class="videoPlayer">
+
+      <source src="http://player.vimeo.com/external/85569724.sd.mp4?s=43df5df0d733011263687d20a47557e4"
+      type="video/mp4"/>
+
+      </video> -->
+
 
 <ion-content padding class="twinkle">
+
+
+
   <h2>{{title}}</h2>
   <ul class="lines">
       <li *ngFor="let line of lines"

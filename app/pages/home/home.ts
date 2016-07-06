@@ -1,6 +1,7 @@
 import {Component} from '@angular/core';
 import {NavController} from 'ionic-angular';
 import {Pushpage} from '../pushpage/pushpage';
+import {SGSLVideo} from './video/video';
 
 @Component({
   templateUrl: 'build/pages/home/home.html',
@@ -13,6 +14,6 @@ export class Home {
   }
 
   getStart(event){
-    this.nav.push(Pushpage);
+    this.nav.push(SGSLVideo);
   }
 }

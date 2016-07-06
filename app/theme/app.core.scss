@@ -17,6 +17,10 @@
 
 @import "../pages/pushpage/pushpage";
 
+@import "../pages/levels/video/video";
+
+@import "../pages/home/video/video";
+
 .toolbar-background {
   background-color: #4364dd;
 
@@ -47,4 +51,7 @@
   }
   .tab-button span {
 
+  }
+  body{
+    margin: 0;
   }
