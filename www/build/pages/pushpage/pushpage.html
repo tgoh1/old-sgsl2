@@ -1,0 +1,40 @@
+
+<ion-navbar *navbar>
+  <ion-title>
+    The SGSL App
+  </ion-title>
+</ion-navbar>
+
+<ion-content class="pushpage">
+
+
+
+  <ion-slides pager>
+    <ion-slide *ngFor="let slide of slides">
+
+      <img [src]="slide.image" class="slide-image"/>
+      <h2 class="slide-title" [innerHTML]="slide.title"></h2>
+      <p [innerHTML]="slide.description"></p>
+    </ion-slide>
+
+    <ion-slide>
+
+      <img src="img/ica-slidebox-img-2.jpg" class="slide-image1" />
+      <h2 class="slide-title">Pop Up Books</h2>
+      <p>Let your child explore the interactive pop up books by scanning images inside the book.</p>
+    </ion-slide>
+
+
+    <ion-slide>
+
+      <img src="img/ica-slidebox-img-4.png" class="slide-image2"/>
+      <h2 class="slide-title">Ready to Learn?</h2>
+      <button (click)="home()" large clear>
+        Get Started
+        <ion-icon name="arrow-forward"></ion-icon>
+      </button>
+    </ion-slide>
+
+  </ion-slides>
+
+</ion-content>

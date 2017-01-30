@@ -1,0 +1,69 @@
+
+<ion-navbar *navbar>
+  <ion-title>
+    Rhymes
+  </ion-title>
+</ion-navbar>
+
+<ion-content class="levels" >
+
+  <div padding class="animated fadeInDown">
+    <ion-segment [(ngModel)]="levels" >
+      <ion-segment-button value="beginner">
+        Beginner
+      </ion-segment-button>
+      <ion-segment-button value="intermediate">
+        Intermediate
+      </ion-segment-button>
+      <ion-segment-button value="advanced">
+        Advanced
+      </ion-segment-button>
+    </ion-segment>
+  </div>
+
+  <div [ngSwitch]="levels">
+    <ion-list *ngSwitchWhen="'beginner'" class="card-background-page">
+
+      <ion-card (click)="openPage()" class="animated flipInX">
+        <img src="img/beginner/Tinklestars.jpg"/>
+        <div class="card-title"></div>
+        <div class="card-subtitle"></div>
+      </ion-card>
+
+      <ion-card class="animated flipInX">
+        <img src="img/rowboat.jpg"/>
+        <div class="card-title"></div>
+        <div class="card-subtitle"></div>
+      </ion-card>
+    </ion-list>
+
+    <ion-list *ngSwitchWhen="'intermediate'">
+      <ion-card (click)="inter()" class="animated flipInX">
+        <img src="img/inter/humpty.jpg"/>
+        <div class="card-title"></div>
+        <div class="card-subtitle"></div>
+      </ion-card>
+
+      <ion-card class="animated flipInX">
+        <img src="img/inter/littlemiss.jpg"/>
+        <div class="card-title"></div>
+        <div class="card-subtitle"></div>
+      </ion-card>
+    </ion-list>
+
+    <ion-list *ngSwitchWhen="'advanced'">
+      <ion-card (click)="adv()" class="animated flipInX">
+        <img src="img/adv/teapot.jpg"/>
+        <div class="card-title"></div>
+        <div class="card-subtitle"></div>
+      </ion-card>
+
+      <ion-card class="animated flipInX">
+        <img src="img/adv/lamb.jpg"/>
+        <div class="card-title"></div>
+        <div class="card-subtitle"></div>
+      </ion-card>
+    </ion-list>
+  </div>
+
+</ion-content>

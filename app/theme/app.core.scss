@@ -1,0 +1,59 @@
+// http://ionicframework.com/docs/v2/theming/
+
+
+// App Shared Imports
+// --------------------------------------------------
+// These are the imports which make up the design of this app.
+// By default each design mode includes these shared imports.
+// App Shared Sass variables belong in app.variables.scss.
+
+@import "../pages/home/home";
+
+@import "../pages/levels/levels";
+
+@import "../pages/camera/camera";
+
+@import "../pages/info/info";
+
+@import "../pages/pushpage/pushpage";
+
+@import "../pages/levels/beginner/twinkle";
+
+@import "../pages/levels/video/video";
+
+@import "../pages/home/video/video";
+
+@import "../pages/levels/video/video1";
+
+@import "../pages/levels/video/video2";
+
+.toolbar-background {
+  background-color: #4364dd;
+
+}
+.toolbar-title {
+  color:white;
+  text-align: center;
+}
+.back-button-text {
+  color:white;
+}
+
+.button-inner {
+
+}
+
+.tab-button {
+    &[aria-selected="false"] {
+
+      background: #f7f7f7;
+    }
+
+    &[aria-selected="true"] {
+      color: #4364dd !important;
+      background: #f7f7f7;
+    }
+  }
+  .tab-button span {
+
+  }

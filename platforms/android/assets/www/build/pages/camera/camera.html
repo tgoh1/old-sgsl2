@@ -1,0 +1,18 @@
+
+<ion-navbar *navbar>
+  <ion-title>
+    Camera
+  </ion-title>
+</ion-navbar>
+
+<ion-content class="camera">
+  <ion-card>
+    <ion-card-content>
+      <div class="center">
+      <button (click)="takePicture()">Click to Remodule</button><br>
+    </div>
+
+      <img [src]="base64Image" *ngIf="base64Image" />
+    </ion-card-content>
+  </ion-card>
+</ion-content>

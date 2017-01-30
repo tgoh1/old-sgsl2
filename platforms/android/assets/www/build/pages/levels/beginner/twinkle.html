@@ -1,0 +1,101 @@
+
+<ion-navbar *navbar>
+  <ion-title>Twinkle, Twinkle, Little Star</ion-title>
+</ion-navbar>
+<video hidden twinkle-vid="ctrl.videoCtrl" src="http://npat.club/videos/npat%20cover2.mp4"></video>
+
+<ion-content padding class="twinkle">
+
+  <div class="wallpaper1 animated fadeInDown">
+  <h2>{{title}}</h2>
+  <ul class="lines" >
+      <li *ngFor="let line of lines"
+      [class.selected]="line === selectedLine"
+
+      (click)="onSelect(line)"
+
+      >
+        <span> {{line.sentence}}</span>
+    </li>
+  </ul>
+  <div *ngIf="selectedLine">
+    <p>
+      {{selectedLine.no}}
+    </p>
+  </div>
+</div>
+<div class="moonlight">
+          <div class="moon">
+          </div>
+      </div>
+
+    <div class="sContainer" id="sFirst">
+      <div class="star one">
+      </div>
+    </div>
+    <div class="sContainer" id="sSecond">
+      <div class="star two">
+      </div>
+    </div>
+    <div class="sContainer" id="sThird">
+      <div class="star three">
+      </div>
+    </div>
+    <div class="sContainer" id="sFourth">
+      <div class="star four">
+      </div>
+    </div>
+    <div class="sContainer" id="sFifth">
+      <div class="star five">
+      </div>
+    </div>
+
+    <div class="lsContainer" id="lsFirst">
+      <div class="lstar lone">
+      </div>
+    </div>
+    <div class="lsContainer" id="lsSecond">
+      <div class="lstar ltwo">
+      </div>
+    </div>
+    <div class="lsContainer" id="lsThird">
+      <div class="lstar lthree">
+      </div>
+    </div>
+    <div class="lsContainer" id="lsFourth">
+      <div class="lstar lfour">
+      </div>
+    </div>
+    <div class="lsContainer" id="lsFifth">
+      <div class="lstar lfive">
+      </div>
+    </div>
+    <div class="lsContainer" id="lsSixth">
+      <div class="lstar lsix">
+      </div>
+    </div>
+    <div class="lsContainer" id="lsSeventh">
+      <div class="lstar lseven">
+      </div>
+    </div>
+    <div class="lsContainer" id="lsEighth">
+      <div class="lstar leight">
+      </div>
+    </div>
+    <div class="lsContainer" id="lsNinth">
+      <div class="lstar lnine">
+      </div>
+    </div>
+    <div class="lsContainer" id="lsTenth">
+      <div class="lstar lten">
+      </div>
+    </div>
+    <div class="lsContainer"  id="lsEleventh">
+      <div class="lstar leleven">
+      </div>
+    </div>
+    <div class="lsContainer"  id="lsTwelfth">
+      <div class="lstar ltwelve">
+      </div>
+    </div>
+</ion-content>
